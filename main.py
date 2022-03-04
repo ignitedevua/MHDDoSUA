@@ -40,7 +40,8 @@ async def start_operation():
             domain_ip = socket.gethostbyname(url)
             logger.info(f'URL {url} [{domain_ip}]')
             process = await asyncio.create_subprocess_exec( "python3", 
-            "start.py", "GET", "{url}", "5", "928", "", "94", "3598",
+            # "start.py", "GET", "{url}", "5", "928", "", "94", "3598",
+            "start.py", "tcp", "{domain_ip}:80", "5", "100",
             stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE)
             if LOG_ENABLE: 
                 stdout_cb = printer(f"{url}_stdout")
