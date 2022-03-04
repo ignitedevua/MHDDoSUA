@@ -37,7 +37,7 @@ async def start_operation():
     while True:
         try:
             url = dataProvider.get_url()
-            # domain_ip = socket.gethostbyname(url)
+            domain_ip = socket.gethostbyname(url)
             logger.info(f'URL {url} [{domain_ip}]')
             process = await asyncio.create_subprocess_exec( "python3", 
             "start.py", "GET", "{url}", "5", "928", "", "94", "3598",
