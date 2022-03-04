@@ -13,7 +13,7 @@ from urllib3 import disable_warnings
 
 from urllib.parse import urlparse
 
-HOSTS = 'https://raw.githubusercontent.com/opengs/uashieldtargets/master/sites.json'
+HOSTS = 'https://github.com/opengs/uashieldtargets/blob/v2/sites.json'
 PROXIES_URL = 'https://raw.githubusercontent.com/opengs/uashieldtargets/master/proxy.json'
 
 
