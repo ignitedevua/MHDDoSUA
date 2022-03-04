@@ -12,6 +12,8 @@ LOG_ENABLE = False
 dataProvider = DataProvider()
 
 def main():
+    # while True:
+        # print(dataProvider.get_url())
     loop = asyncio.get_event_loop()
     union = asyncio.gather(*[
         start_operation()
